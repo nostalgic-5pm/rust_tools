@@ -1,0 +1,125 @@
+{
+  // General Editor Settings
+  "editor.fontFamily": "Moralerspace Xenon HWJPDOC",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.wrappingIndent": "indent",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.minimap.enabled": false,
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.snippetSuggestions": "top",
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.accessibilitySupport": "off",
+  "editor.smoothScrolling": false,
+  // Files Settings
+  "files.encoding": "utf8",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/target/**": true
+  },
+
+  // Code Actions
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // Extension Settings
+  "prettier.printWidth": 100,
+
+  // Language-specific Settings
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+
+  "[cobol]": {
+    "editor.defaultFormatter": "bitlang.cobol"
+  },
+
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoIndent": "advanced"
+  },
+
+  "[sql]": {
+    "editor.defaultFormatter": "bradymholt.pgformatter"
+  },
+
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "files.trimTrailingWhitespace": false // Markdownでは末尾スペースが意味を持つ場合がある
+  },
+  // Extension-specific Settings
+  "json.schemaDownload.enable": true,
+
+  // PostgreSQL Formatter
+  "pgFormatter.functionCase": "lowercase",
+  "pgFormatter.keywordCase": "uppercase",
+  "pgFormatter.typeCase": "uppercase",
+
+  // Markdown linting
+  "markdownlint.run": "onSave",
+  "markdownlint.config": {
+    "MD010": false, // 硬タブを許可
+    "MD025": false, // 複数のH1タグを許可
+    "MD033": false, // HTMLタグを許可
+    "MD034": false // 生URLを許可
+  },
+
+  // Rust Analyzer settings
+  "rust-analyzer.cargo.buildScripts.enable": true, // ビルドスクリプトを有効化
+  "rust-analyzer.procMacro.enable": true, // プロシージャルマクロを有効化
+
+  // VS Code Theme Customizations
+  "workbench.colorCustomizations": {
+    "[Tokyo Night Gogh]": {
+      "foreground": "#959cbd",
+      "panelTitle.activeBorder": "#3d59a1",
+      "panelTitle.activeForeground": "#bdc7f0",
+      "panelTitle.inactiveForeground": "#959cbd",
+      "tab.activeForeground": "#bdc7f0",
+      "tab.inactiveForeground": "#959cbd",
+      "breadcrumb.foreground": "#959cbd",
+      "breadcrumb.focusForeground": "#bdc7f0",
+      "breadcrumb.activeSelectionForeground": "#bdc7f0",
+      "statusBar.foreground": "#bdc7f0",
+      "list.focusForeground": "#bdc7f0",
+      "list.hoverForeground": "#bdc7f0",
+      "list.activeSelectionForeground": "#bdc7f0",
+      "list.inactiveSelectionForeground": "#bdc7f0",
+      "list.inactiveSelectionBackground": "#202330",
+      "sideBar.foreground": "#959cbd",
+      "dropdown.foreground": "#959cbd",
+      "menu.foreground": "#bdc7f0",
+      "menubar.selectionForeground": "#bdc7f0",
+      "input.foreground": "#959cbd",
+      "input.placeholderForeground": "#959cbd",
+      "activityBar.foreground": "#bdc7f0",
+      "activityBar.inactiveForeground": "#787c99",
+      "gitDecoration.ignoredResourceForeground": "#696d87"
+    }
+  },
+
+  "editor.tokenColorCustomizations": {
+    "[Tokyo Night Gogh]": {
+      "comments": "#e0e0e0cb"
+    }
+  },
+
+  "coverage-gutters.showGutterCoverage": true,
+  "coverage-gutters.showLineCoverage": true
+}

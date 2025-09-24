@@ -1,6 +1,17 @@
-[package]
-name = "rust_tools"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "3"
+members = ["rust/create_draft", "rust/share"]
 
-[dependencies]
+[workspace.dependencies]
+calamine = "0.30"
+derive_more = { version = "2.0.1", features = [
+    "display",
+    "from_str",
+    "as_ref",
+    "from",
+    "into",
+] }
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.107"
+tracing = "0.1.37"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }
