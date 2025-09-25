@@ -1,6 +1,6 @@
 [workspace]
 resolver = "3"
-members = ["rust/create_draft", "rust/share"]
+members = ["rust/mail_composer", "rust/share"]
 
 [workspace.dependencies]
 calamine = "0.30"

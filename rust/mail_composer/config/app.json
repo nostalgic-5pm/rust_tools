@@ -1,0 +1,10 @@
+{
+  "from": "差出太郎",
+  "department": "差出部",
+  "thunderbird_exe": "C:/Program Files/Mozilla Thunderbird/thunderbird.exe",
+  "log_dir": "log",
+  "input_dir": "in",
+  "address_book_file": "address_book.json",
+  "output_dir": "out",
+  "start_time_file": "work_start_time.json"
+}
